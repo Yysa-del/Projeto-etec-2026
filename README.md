@@ -46,6 +46,6 @@ respostas
 datas
 status
 
-<img width="780" height="668" alt="Captura de tela 2026-05-13 083342" src="https://github.com/user-attachments/assets/a2702302-e7f3-4a49-8cea-59bd4e3e1596" />
+<img width="769" height="651" alt="Sem título" src="https://github.com/user-attachments/assets/204a3712-104a-45a7-af8d-98bd39cbfb0d" />
 
 
