@@ -46,4 +46,6 @@ respostas
 datas
 status
 
-<img width="1536" height="1024" alt="ChatGPT Image 29 de abr  de 2026, 08_55_51" src="https://github.com/user-attachments/assets/4740e8af-946a-40b3-ab1f-2b45e8287653" />
+<img width="780" height="668" alt="Captura de tela 2026-05-13 083342" src="https://github.com/user-attachments/assets/a2702302-e7f3-4a49-8cea-59bd4e3e1596" />
+
+
