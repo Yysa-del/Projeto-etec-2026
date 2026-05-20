@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu AVA - Portal do Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SESSÃO DE AUTENTICAÇÃO (LOGIN/CADASTRO) -->
+    <div id="auth-screen" class="auth-container">
+        <!-- Formulário de Login -->
+        <div id="login-box" class="auth-box">
+            <h2>Acessar o AVA</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="E-mail" required>
+                <input type="password" id="login-password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não tem conta? <button id="btn-go-register" class="btn-link">Cadastre-se</button></p>
+        </div>
+
+        <!-- Formulário de Cadastro (Novo Aluno) -->
+        <div id="register-box" class="auth-box hidden">
+            <h2>Novo Aluno</h2>
+            <form id="register-form">
+                <input type="text" id="reg-name" placeholder="Nome Completo" required>
+                <input type="email" id="reg-email" placeholder="E-mail" required>
+                <input type="password" id="reg-password" placeholder="Senha" required>
+                
+                <label for="reg-course">Escolha seu Curso Inicial:</label>
+                <select id="reg-course" required></select>
+                
+                <button type="submit">Criar Conta</button>
+            </form>
+            <p>Já tem conta? <button id="btn-go-login" class="btn-link">Fazer Login</button></p>
+        </div>
+    </div>
+
+    <!-- SESSÃO PRINCIPAL DO AVA (OCULTA ANTES DO LOGIN) -->
+    <div id="app-screen" class="hidden">
+        <header>
+            <h1>Portal de Aprendizado</h1>
+            <div class="user-controls">
+                <span id="user-info">Olá, Aluno!</span>
+                <button id="btn-logout" class="btn-danger">Sair</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="dashboard">
+                <h2>Seus Cursos Matriculados</h2>
+                <div id="courses-container" class="grid-courses"></div>
+            </section>
+        </main>
+
+        <!-- Modal de Conteúdo do Curso -->
+        <div id="course-modal" class="modal hidden">
+            <div class="modal-content">
+                <span id="close-btn" class="close">&times;</span>
+                <h2 id="modal-title">Título do Curso</h2>
+                <div id="modal-modules"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
